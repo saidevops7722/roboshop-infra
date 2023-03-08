@@ -27,7 +27,9 @@ resource "null_resource" "provisioner" {
     inline = [
        "ansible-pull -i localhost, -U https://github.com/saidevops7722/roboshop-ansible.git roboshop.yml -e role_name=${var.component}"
     ]
+
   }
+
 }
 
 resource "aws_security_group" "sg" {
