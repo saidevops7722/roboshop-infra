@@ -10,5 +10,6 @@ resource "aws_ssm_parameter" "parameter" {
   value = var.parameters[count.index].value
 }
 
-variable "parameters" { }
+variable "parameters" {}
+
 
